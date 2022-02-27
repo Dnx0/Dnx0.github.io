@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Dosis:wght@800&family=Roboto+Serif:wght@300&family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Dosis:wght@800&family=Poppins:wght@700&family=Roboto+Serif:wght@300&family=Roboto+Slab:wght@500&display=swap');
+
+
+body {
+	background-color: #BBC7CE; 
+	color: white;
+	font-family: "Roboto Slab" ;
+	font-size: 1.6rem;
+	margin: 0 auto;
+	
+}
+/* Separando o logo dos itens do nav com flexbox */
+header {
+	display: flex;
+	flex direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: whitesmoke;
+	max-width: 100vw;
+}
+
+/* mexendo no Logo que está dentro do header junto ao nav */
+.title{
+	display:  flex;
+	flex-direction: column;
+	/*muda a distancia entre as palavras*/
+	line-height: 0.9em;
+}
+
+h1{
+	font-weight: 200;
+	padding-left: 1em;
+}
+
+/* Movendo os itens dentro do nav (separando eles e colocando na direção certa) */
+ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-content: space-between;
+	gap: 1em;
+	
+	padding-right: 1.5em;
+}
+
+li{
+	font-size: 1.1em;
+	list-style: none;
+}
+
+/* Mudando a cor dos links */
+a{
+	text-decoration: none;
+	color: #058ED9;
+
+
+}
+
+a:hover{
+	font-size: 1.2em;
+	color: #03256C;
+	transition: 0.5s all;
+	cursor: pointer;
+}
+
+/* Botão _já tem uma conta_ com borda e 
+um hover diferente  */
+
+.cBorda {
+	border: 0.1em solid #058ED9;
+	border-radius: 35px ;
+
+}
+
+.cBorda:hover {
+	background-color: hsl(218, 50%, 42%);
+	color:whitesmoke;
+	
+}
+
+/* Mudando a área principal da
+Landing Page */
+
+main{
+	display: flex;
+	flex-direction: row;
+	
+
+}
+
+h2 {
+	font-size: 4em;
+	font-family: "Poppins";
+	line-height: 1.1em;
+	color: #36558F;
+	padding-left: 0.2em;
+}
+
+/* Mudando as configurações do texto para
+ não passar do meio da tela */
+p{
+	max-width: 50vw;
+	padding-left: 0.7em;
+}
+
+.boneco{
+	min-width: 50vw;
+	min-height: 4.2em;
+
+}
+/* mudanças no formulário */
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	padding-left: 2em;
+	
+}
+
+.enviar{
+	height: 4em;
+	background-color:  #36558F;
+	width: 50%;
+	
+	justify-content: center;
+}
+
+.enviar:hover {
+	font-size: 1em;
+	cursor: pointer;
+}
+
+input{
+	margin-top: 1em;
+	height: 5em;
+	font-size: 0.8em;
+	border-radius: 4em;
+	border: none;
+	font-weight: bold;
+	background-color: #8C6DBA;
+	color: white;
+}
+
+/* Área do footer */
+footer {
+	background-color:  #36558F;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+
+/* Mudando o tamanho dos icones das midias socias */
+.midias {
+	max-height: 2.5em;
+	max-width: 2.5em;
+}
+/* Section em volta dos icones das mídias socias */
+.redes{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 1em;
+	
+}
+
+.avisos{
+	property: unset;
+	display: flex;
+	flex-direction: row;
+	gap: 1em;
+	
+}
+
+.politica{
+	font-size: 0.8em;
+	color: white;
+}
